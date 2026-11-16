@@ -1,0 +1,2 @@
+Mode=full | models=4 | questions=40 | repeats=3 | target_combos=480 | output=results/raw.jsonl
+Done. calls_made=480 ok=480 parse_ok=480 final_errors=0 skipped_existing=0

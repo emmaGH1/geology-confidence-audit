@@ -1,0 +1,8 @@
+base_url: "https://llm.bankr.bot/v1/chat/completions"
+models:
+  - "gpt-5.4-mini"
+  - "claude-haiku-4.5"
+  - "gemini-3-flash"
+  - "deepseek-v3.2"
+temperature: 0.7
+n_repeats: 3

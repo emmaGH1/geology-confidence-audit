@@ -1,0 +1,481 @@
+id,set,difficulty,model,repeat,model_answer,confidence,correct,grade_source
+A01,A,medium,claude-haiku-4.5,1,Marcellus Shale,95,1,auto
+A01,A,medium,claude-haiku-4.5,2,Marcellus Shale,92,1,auto
+A01,A,medium,claude-haiku-4.5,3,Marcellus Shale,92,1,auto
+A02,A,medium,claude-haiku-4.5,1,Burgess Shale,95,1,auto
+A02,A,medium,claude-haiku-4.5,2,Burgess Shale,95,1,auto
+A02,A,medium,claude-haiku-4.5,3,Burgess Shale,95,1,auto
+A03,A,medium,claude-haiku-4.5,1,Morrison Formation,95,1,auto
+A03,A,medium,claude-haiku-4.5,2,Morrison Formation,95,1,auto
+A03,A,medium,claude-haiku-4.5,3,Morrison Formation,95,1,auto
+A04,A,medium,claude-haiku-4.5,1,Navajo Sandstone,95,1,auto
+A04,A,medium,claude-haiku-4.5,2,Navajo Sandstone,95,1,auto
+A04,A,medium,claude-haiku-4.5,3,Navajo Sandstone,95,1,auto
+A05,A,easy,claude-haiku-4.5,1,Cretaceous-Paleogene (K-Pg) boundary,95,1,manual_claude
+A05,A,easy,claude-haiku-4.5,2,Cretaceous-Paleogene (K-Pg) boundary,95,1,manual_claude
+A05,A,easy,claude-haiku-4.5,3,Cretaceous-Paleogene (K-Pg) boundary,95,1,manual_claude
+A06,A,medium,claude-haiku-4.5,1,Bakken Formation,95,1,auto
+A06,A,medium,claude-haiku-4.5,2,Bakken Formation,95,1,auto
+A06,A,medium,claude-haiku-4.5,3,Bakken Formation,95,1,auto
+A07,A,medium,claude-haiku-4.5,1,sillimanite,92,1,auto
+A07,A,medium,claude-haiku-4.5,2,sillimanite,85,1,auto
+A07,A,medium,claude-haiku-4.5,3,sillimanite,75,1,auto
+A08,A,medium,claude-haiku-4.5,1,Blue-schist facies,95,1,manual_claude
+A08,A,medium,claude-haiku-4.5,2,Blue schist facies,95,1,manual_claude
+A08,A,medium,claude-haiku-4.5,3,Blueschist facies,95,1,auto
+A09,A,medium,claude-haiku-4.5,1,komatiite,92,1,auto
+A09,A,medium,claude-haiku-4.5,2,komatiite,92,1,auto
+A09,A,medium,claude-haiku-4.5,3,Komatiite,92,1,auto
+A10,A,medium,claude-haiku-4.5,1,Skarn deposit,92,1,auto
+A10,A,medium,claude-haiku-4.5,2,Skarn deposit,92,1,auto
+A10,A,medium,claude-haiku-4.5,3,Skarn deposit,95,1,auto
+A11,A,medium,claude-haiku-4.5,1,Bouma sequence,92,1,auto
+A11,A,medium,claude-haiku-4.5,2,Bouma Sequence,92,1,auto
+A11,A,medium,claude-haiku-4.5,3,Bouma sequence,92,1,auto
+A12,A,medium,claude-haiku-4.5,1,Foreland basin,95,1,auto
+A12,A,medium,claude-haiku-4.5,2,Foreland basin (or flexural basin),92,1,manual_claude
+A12,A,medium,claude-haiku-4.5,3,Foreland basin (or peripheral foreland basin),92,1,manual_claude
+A13,A,medium,claude-haiku-4.5,1,Mississippi Valley Type (MVT),92,1,manual_claude
+A13,A,medium,claude-haiku-4.5,2,Mississippi Valley Type (MVT),92,1,manual_claude
+A13,A,medium,claude-haiku-4.5,3,Mississippi Valley-type (MVT) deposits,92,1,manual_claude
+A14,A,medium,claude-haiku-4.5,1,Walther's Law (Walther's Principle of Facies),92,1,manual_claude
+A14,A,medium,claude-haiku-4.5,2,Walther's Law of Facies (or Walther's Principle),92,1,manual_claude
+A14,A,medium,claude-haiku-4.5,3,Walther's Law (Law of Facies),92,1,manual_claude
+A15,A,hard,claude-haiku-4.5,1,Maximum Flooding Surface (MFS),92,1,manual_claude
+A15,A,hard,claude-haiku-4.5,2,Maximum flooding surface (MFS),95,1,manual_claude
+A15,A,hard,claude-haiku-4.5,3,Maximum Flooding Surface (MFS),95,1,manual_claude
+A16,A,hard,claude-haiku-4.5,1,Peritectic point,85,1,auto
+A16,A,hard,claude-haiku-4.5,2,Incongruent melting point (peritectic point),82,1,manual_claude
+A16,A,hard,claude-haiku-4.5,3,Peritectic point,85,1,auto
+A17,A,hard,claude-haiku-4.5,1,coesite,95,1,auto
+A17,A,hard,claude-haiku-4.5,2,Coesite,95,1,auto
+A17,A,hard,claude-haiku-4.5,3,coesite,95,1,auto
+A18,A,hard,claude-haiku-4.5,1,Grenville Orogeny,92,1,auto
+A18,A,hard,claude-haiku-4.5,2,Grenville Orogeny,92,1,auto
+A18,A,hard,claude-haiku-4.5,3,Grenville Orogeny,95,1,auto
+A19,A,hard,claude-haiku-4.5,1,Semail Ophiolite,95,1,auto
+A19,A,hard,claude-haiku-4.5,2,Semail Ophiolite,95,1,auto
+A19,A,hard,claude-haiku-4.5,3,Semail Ophiolite,95,1,auto
+A20,A,hard,claude-haiku-4.5,1,Omphacite,92,1,auto
+A20,A,hard,claude-haiku-4.5,2,Omphacite,92,1,auto
+A20,A,hard,claude-haiku-4.5,3,Omphacite,92,1,auto
+B01,B,easy,claude-haiku-4.5,1,Agbada Formation,85,1,auto
+B01,B,easy,claude-haiku-4.5,2,Agbada Formation,85,1,auto
+B01,B,easy,claude-haiku-4.5,3,Agbada Formation,85,1,auto
+B02,B,easy,claude-haiku-4.5,1,Pan-African Orogeny,85,1,auto
+B02,B,easy,claude-haiku-4.5,2,Pan-African Orogeny,85,1,auto
+B02,B,easy,claude-haiku-4.5,3,Pan-African Orogeny,85,1,auto
+B03,B,easy,claude-haiku-4.5,1,Younger Granites,75,0,manual_claude
+B03,B,easy,claude-haiku-4.5,2,Older Granites,75,1,auto
+B03,B,easy,claude-haiku-4.5,3,Younger Granites,82,0,manual_claude
+B05,B,easy,claude-haiku-4.5,1,Lead and zinc,75,1,auto
+B05,B,easy,claude-haiku-4.5,2,Lead and zinc,75,1,auto
+B05,B,easy,claude-haiku-4.5,3,Lead and zinc,82,1,auto
+B07,B,easy,claude-haiku-4.5,1,Iullemmeden Basin,75,1,auto
+B07,B,easy,claude-haiku-4.5,2,The Iullemmeden Basin,75,1,auto
+B07,B,easy,claude-haiku-4.5,3,Chad Basin,75,0,manual_claude
+B08,B,medium,claude-haiku-4.5,1,Akata Formation,92,1,auto
+B08,B,medium,claude-haiku-4.5,2,Akata Formation,85,1,auto
+B08,B,medium,claude-haiku-4.5,3,Akata Formation,85,1,auto
+B10,B,medium,claude-haiku-4.5,1,Santonian,45,1,auto
+B10,B,medium,claude-haiku-4.5,2,Santonian,45,1,auto
+B10,B,medium,claude-haiku-4.5,3,Santonian,45,1,auto
+B11,B,medium,claude-haiku-4.5,1,Abakaliki Anticline,45,1,auto
+B11,B,medium,claude-haiku-4.5,2,Abakaliki anticline,45,1,auto
+B11,B,medium,claude-haiku-4.5,3,Abakaliki anticline,45,1,auto
+B12,B,medium,claude-haiku-4.5,1,Enugu Formation,85,0,manual_claude
+B12,B,medium,claude-haiku-4.5,2,Enugu Formation,75,0,manual_claude
+B12,B,medium,claude-haiku-4.5,3,Enugu Formation,85,0,manual_claude
+B13,B,medium,claude-haiku-4.5,1,Ajali Formation,85,1,auto
+B13,B,medium,claude-haiku-4.5,2,Ajali Formation,75,1,auto
+B13,B,medium,claude-haiku-4.5,3,Ajali Formation,75,1,auto
+B14,B,medium,claude-haiku-4.5,1,Jurassic,45,1,auto
+B14,B,medium,claude-haiku-4.5,2,Jurassic,45,1,auto
+B14,B,medium,claude-haiku-4.5,3,Jurassic,45,1,auto
+B15,B,medium,claude-haiku-4.5,1,columbite,75,1,auto
+B15,B,medium,claude-haiku-4.5,2,columbite,78,1,auto
+B15,B,medium,claude-haiku-4.5,3,columbite,85,1,auto
+B17,B,medium,claude-haiku-4.5,1,Kalambaina Formation,45,1,auto
+B17,B,medium,claude-haiku-4.5,2,Dile Formation,35,0,manual_claude
+B17,B,medium,claude-haiku-4.5,3,Wurno Formation,45,0,manual_claude
+B18,B,hard,claude-haiku-4.5,1,Abeokuta Group,45,0,manual_claude
+B18,B,hard,claude-haiku-4.5,2,Abeokuta Group,60,0,manual_claude
+B18,B,hard,claude-haiku-4.5,3,Abeokuta Group,45,0,manual_claude
+B19,B,hard,claude-haiku-4.5,1,Imo Formation,72,1,auto
+B19,B,hard,claude-haiku-4.5,2,Ze Formation,35,0,manual_claude
+B19,B,hard,claude-haiku-4.5,3,Oshie Formation,35,0,manual_claude
+B20,B,hard,claude-haiku-4.5,1,Gumbel Formation,35,0,manual_claude
+B20,B,hard,claude-haiku-4.5,2,Gumbel Formation,35,0,manual_claude
+B20,B,hard,claude-haiku-4.5,3,Gumbel Formation,35,0,manual_claude
+B21,B,hard,claude-haiku-4.5,1,Fika Shale Formation,72,1,manual_claude
+B21,B,hard,claude-haiku-4.5,2,Yolde Formation,35,0,manual_claude
+B21,B,hard,claude-haiku-4.5,3,Kanadi Formation,35,0,manual_claude
+B22,B,hard,claude-haiku-4.5,1,Patti Formation,45,0,manual_claude
+B22,B,hard,claude-haiku-4.5,2,Ajali Formation,35,0,manual_claude
+B22,B,hard,claude-haiku-4.5,3,Patti Formation,35,0,manual_claude
+B23,B,hard,claude-haiku-4.5,1,Gundumi Formation,42,0,manual_claude
+B23,B,hard,claude-haiku-4.5,2,Gara Formation,35,0,manual_claude
+B23,B,hard,claude-haiku-4.5,3,Gamba Formation,35,0,manual_claude
+B25,B,hard,claude-haiku-4.5,1,Ogwashi-Asaba Formation,45,1,auto
+B25,B,hard,claude-haiku-4.5,2,Ogwashi-Asaba Formation,72,1,auto
+B25,B,hard,claude-haiku-4.5,3,Ogwashi-Asaba Formation,75,1,auto
+A01,A,medium,deepseek-v3.2,1,Marcellus Shale,100,1,auto
+A01,A,medium,deepseek-v3.2,2,Marcellus Shale,100,1,auto
+A01,A,medium,deepseek-v3.2,3,Marcellus Shale,100,1,auto
+A02,A,medium,deepseek-v3.2,1,Burgess Shale,100,1,auto
+A02,A,medium,deepseek-v3.2,2,Burgess Shale,100,1,auto
+A02,A,medium,deepseek-v3.2,3,Burgess Shale,100,1,auto
+A03,A,medium,deepseek-v3.2,1,Morrison Formation,98,1,auto
+A03,A,medium,deepseek-v3.2,2,Morrison Formation,100,1,auto
+A03,A,medium,deepseek-v3.2,3,Morrison Formation,98,1,auto
+A04,A,medium,deepseek-v3.2,1,Navajo Sandstone,95,1,auto
+A04,A,medium,deepseek-v3.2,2,Navajo Sandstone,95,1,auto
+A04,A,medium,deepseek-v3.2,3,Navajo Sandstone,95,1,auto
+A05,A,easy,deepseek-v3.2,1,Cretaceous–Paleogene (K–Pg) boundary,99,1,manual_claude
+A05,A,easy,deepseek-v3.2,2,Cretaceous-Paleogene boundary (K-Pg boundary),100,1,manual_claude
+A05,A,easy,deepseek-v3.2,3,Cretaceous–Paleogene (K–Pg) boundary,100,1,manual_claude
+A06,A,medium,deepseek-v3.2,1,Bakken Formation,100,1,auto
+A06,A,medium,deepseek-v3.2,2,Bakken Formation,95,1,auto
+A06,A,medium,deepseek-v3.2,3,Bakken Formation,99,1,auto
+A07,A,medium,deepseek-v3.2,1,sillimanite,100,1,auto
+A07,A,medium,deepseek-v3.2,2,sillimanite,95,1,auto
+A07,A,medium,deepseek-v3.2,3,sillimanite,100,1,auto
+A08,A,medium,deepseek-v3.2,1,Blueschist facies,95,1,auto
+A08,A,medium,deepseek-v3.2,2,Blueschist facies,95,1,auto
+A08,A,medium,deepseek-v3.2,3,Blueschist facies,95,1,auto
+A09,A,medium,deepseek-v3.2,1,komatiite,95,1,auto
+A09,A,medium,deepseek-v3.2,2,komatiite,95,1,auto
+A09,A,medium,deepseek-v3.2,3,komatiite,95,1,auto
+A10,A,medium,deepseek-v3.2,1,Skarn deposit,95,1,auto
+A10,A,medium,deepseek-v3.2,2,Skarn deposit,95,1,auto
+A10,A,medium,deepseek-v3.2,3,skarn deposit,95,1,auto
+A11,A,medium,deepseek-v3.2,1,Bouma sequence,100,1,auto
+A11,A,medium,deepseek-v3.2,2,Bouma sequence,100,1,auto
+A11,A,medium,deepseek-v3.2,3,Bouma sequence,98,1,auto
+A12,A,medium,deepseek-v3.2,1,Foreland basin,95,1,auto
+A12,A,medium,deepseek-v3.2,2,Foreland basin,95,1,auto
+A12,A,medium,deepseek-v3.2,3,Foreland basin,95,1,auto
+A13,A,medium,deepseek-v3.2,1,Mississippi Valley-type (MVT),98,1,manual_claude
+A13,A,medium,deepseek-v3.2,2,Mississippi Valley-Type (MVT),95,1,manual_claude
+A13,A,medium,deepseek-v3.2,3,Mississippi Valley Type (MVT) deposits,95,1,manual_claude
+A14,A,medium,deepseek-v3.2,1,Walther's Law,95,1,auto
+A14,A,medium,deepseek-v3.2,2,Walther's Law,95,1,auto
+A14,A,medium,deepseek-v3.2,3,Walther's Law,95,1,auto
+A15,A,hard,deepseek-v3.2,1,Maximum flooding surface,95,1,auto
+A15,A,hard,deepseek-v3.2,2,Maximum flooding surface,95,1,auto
+A15,A,hard,deepseek-v3.2,3,Maximum flooding surface,95,1,auto
+A16,A,hard,deepseek-v3.2,1,Peritectic point,90,1,auto
+A16,A,hard,deepseek-v3.2,2,Peritectic point,95,1,auto
+A16,A,hard,deepseek-v3.2,3,Peritectic point,95,1,auto
+A17,A,hard,deepseek-v3.2,1,coesite,100,1,auto
+A17,A,hard,deepseek-v3.2,2,coesite,100,1,auto
+A17,A,hard,deepseek-v3.2,3,Coesite,100,1,auto
+A18,A,hard,deepseek-v3.2,1,Grenville orogeny,100,1,auto
+A18,A,hard,deepseek-v3.2,2,Grenville Orogeny,100,1,auto
+A18,A,hard,deepseek-v3.2,3,Grenville Orogeny,100,1,auto
+A19,A,hard,deepseek-v3.2,1,Semail Ophiolite,100,1,auto
+A19,A,hard,deepseek-v3.2,2,Semail Ophiolite,100,1,auto
+A19,A,hard,deepseek-v3.2,3,Semail Ophiolite,100,1,auto
+A20,A,hard,deepseek-v3.2,1,omphacite,95,1,auto
+A20,A,hard,deepseek-v3.2,2,omphacite,95,1,auto
+A20,A,hard,deepseek-v3.2,3,Omphacite,90,1,auto
+B01,B,easy,deepseek-v3.2,1,Agbada Formation,90,1,auto
+B01,B,easy,deepseek-v3.2,2,Agbada Formation,90,1,auto
+B01,B,easy,deepseek-v3.2,3,Agbada Formation,95,1,auto
+B02,B,easy,deepseek-v3.2,1,Pan-African Orogeny,95,1,auto
+B02,B,easy,deepseek-v3.2,2,Pan-African Orogeny,95,1,auto
+B02,B,easy,deepseek-v3.2,3,Pan-African Orogeny,95,1,auto
+B03,B,easy,deepseek-v3.2,1,Older Granites,90,1,auto
+B03,B,easy,deepseek-v3.2,2,The Older Granites,85,1,auto
+B03,B,easy,deepseek-v3.2,3,Older Granites,95,1,auto
+B05,B,easy,deepseek-v3.2,1,Lead and zinc,90,1,auto
+B05,B,easy,deepseek-v3.2,2,Lead and Zinc,95,1,auto
+B05,B,easy,deepseek-v3.2,3,Lead and Zinc,95,1,auto
+B07,B,easy,deepseek-v3.2,1,The Iullemmeden Basin,95,1,auto
+B07,B,easy,deepseek-v3.2,2,Iullemmeden Basin,95,1,auto
+B07,B,easy,deepseek-v3.2,3,Iullemmeden Basin,95,1,auto
+B08,B,medium,deepseek-v3.2,1,Akata Formation,95,1,auto
+B08,B,medium,deepseek-v3.2,2,Akata Formation,95,1,auto
+B08,B,medium,deepseek-v3.2,3,Akata Formation,95,1,auto
+B10,B,medium,deepseek-v3.2,1,Campanian,85,0,manual_claude
+B10,B,medium,deepseek-v3.2,2,Santonian,85,1,auto
+B10,B,medium,deepseek-v3.2,3,Santonian,90,1,auto
+B11,B,medium,deepseek-v3.2,1,Abakaliki Anticlinorium,85,1,auto
+B11,B,medium,deepseek-v3.2,2,Abakaliki Anticlinorium,85,1,auto
+B11,B,medium,deepseek-v3.2,3,The Abakaliki Anticlinorium,85,1,auto
+B12,B,medium,deepseek-v3.2,1,Mamu Formation,95,1,auto
+B12,B,medium,deepseek-v3.2,2,Mamu Formation,95,1,auto
+B12,B,medium,deepseek-v3.2,3,Mamu Formation,95,1,auto
+B13,B,medium,deepseek-v3.2,1,Ajali Sandstone,95,1,auto
+B13,B,medium,deepseek-v3.2,2,Ajali Sandstone,95,1,auto
+B13,B,medium,deepseek-v3.2,3,Nanka Formation,95,0,manual_claude
+B14,B,medium,deepseek-v3.2,1,Jurassic,90,1,auto
+B14,B,medium,deepseek-v3.2,2,Jurassic,90,1,auto
+B14,B,medium,deepseek-v3.2,3,Jurassic,80,1,auto
+B15,B,medium,deepseek-v3.2,1,columbite,90,1,auto
+B15,B,medium,deepseek-v3.2,2,Columbite,95,1,auto
+B15,B,medium,deepseek-v3.2,3,columbite,95,1,auto
+B17,B,medium,deepseek-v3.2,1,Dange Formation,85,0,manual_claude
+B17,B,medium,deepseek-v3.2,2,Dange Formation,85,0,manual_claude
+B17,B,medium,deepseek-v3.2,3,Dange Formation,85,0,manual_claude
+B18,B,hard,deepseek-v3.2,1,Asu River Group,85,1,auto
+B18,B,hard,deepseek-v3.2,2,Asu River Group,85,1,auto
+B18,B,hard,deepseek-v3.2,3,Asu River Group,80,1,auto
+B19,B,hard,deepseek-v3.2,1,Imo Formation,90,1,auto
+B19,B,hard,deepseek-v3.2,2,Imo Formation,85,1,auto
+B19,B,hard,deepseek-v3.2,3,Imo Formation,95,1,auto
+B20,B,hard,deepseek-v3.2,1,Bima Formation,85,1,auto
+B20,B,hard,deepseek-v3.2,2,Bima Formation,90,1,auto
+B20,B,hard,deepseek-v3.2,3,Bima Formation,90,1,auto
+B21,B,hard,deepseek-v3.2,1,Fika Shale,95,1,auto
+B21,B,hard,deepseek-v3.2,2,Fika Shale,95,1,auto
+B21,B,hard,deepseek-v3.2,3,Fika Shale,95,1,auto
+B22,B,hard,deepseek-v3.2,1,Lokoja Formation,90,0,manual_claude
+B22,B,hard,deepseek-v3.2,2,Agbaja Formation,95,1,auto
+B22,B,hard,deepseek-v3.2,3,Patti Formation,95,0,manual_claude
+B23,B,hard,deepseek-v3.2,1,Gwandu Formation,85,1,auto
+B23,B,hard,deepseek-v3.2,2,Gwandu Formation,85,1,auto
+B23,B,hard,deepseek-v3.2,3,Gwandu Formation,85,1,auto
+B25,B,hard,deepseek-v3.2,1,The Ogwashi-Asaba Formation,85,1,auto
+B25,B,hard,deepseek-v3.2,2,Ogwashi-Asaba Formation,95,1,auto
+B25,B,hard,deepseek-v3.2,3,Ogwashi-Asaba Formation,85,1,auto
+A01,A,medium,gemini-3-flash,1,Marcellus Shale,100,1,auto
+A01,A,medium,gemini-3-flash,2,Marcellus Shale,100,1,auto
+A01,A,medium,gemini-3-flash,3,Marcellus Shale,100,1,auto
+A02,A,medium,gemini-3-flash,1,Burgess Shale,100,1,auto
+A02,A,medium,gemini-3-flash,2,Burgess Shale,100,1,auto
+A02,A,medium,gemini-3-flash,3,Burgess Shale,100,1,auto
+A03,A,medium,gemini-3-flash,1,Morrison Formation,100,1,auto
+A03,A,medium,gemini-3-flash,2,Morrison Formation,100,1,auto
+A03,A,medium,gemini-3-flash,3,Morrison Formation,100,1,auto
+A04,A,medium,gemini-3-flash,1,Navajo Sandstone,100,1,auto
+A04,A,medium,gemini-3-flash,2,Navajo Sandstone,100,1,auto
+A04,A,medium,gemini-3-flash,3,Navajo Sandstone,100,1,auto
+A05,A,easy,gemini-3-flash,1,K-Pg boundary,100,1,auto
+A05,A,easy,gemini-3-flash,2,Cretaceous-Paleogene boundary,100,1,auto
+A05,A,easy,gemini-3-flash,3,Cretaceous-Paleogene boundary,100,1,auto
+A06,A,medium,gemini-3-flash,1,Bakken Formation,100,1,auto
+A06,A,medium,gemini-3-flash,2,Bakken Formation,100,1,auto
+A06,A,medium,gemini-3-flash,3,Bakken Formation,100,1,auto
+A07,A,medium,gemini-3-flash,1,Sillimanite,100,1,auto
+A07,A,medium,gemini-3-flash,2,Sillimanite,100,1,auto
+A07,A,medium,gemini-3-flash,3,sillimanite,100,1,auto
+A08,A,medium,gemini-3-flash,1,Blueschist facies,100,1,auto
+A08,A,medium,gemini-3-flash,2,Blueschist facies,100,1,auto
+A08,A,medium,gemini-3-flash,3,Blueschist facies,100,1,auto
+A09,A,medium,gemini-3-flash,1,Komatiite,100,1,auto
+A09,A,medium,gemini-3-flash,2,Komatiite,100,1,auto
+A09,A,medium,gemini-3-flash,3,Komatiite,100,1,auto
+A10,A,medium,gemini-3-flash,1,Skarn,100,1,auto
+A10,A,medium,gemini-3-flash,2,skarn,100,1,auto
+A10,A,medium,gemini-3-flash,3,Skarn,100,1,auto
+A11,A,medium,gemini-3-flash,1,Bouma sequence,100,1,auto
+A11,A,medium,gemini-3-flash,2,Bouma sequence,100,1,auto
+A11,A,medium,gemini-3-flash,3,Bouma sequence,100,1,auto
+A12,A,medium,gemini-3-flash,1,foreland basin,100,1,auto
+A12,A,medium,gemini-3-flash,2,foreland basin,100,1,auto
+A12,A,medium,gemini-3-flash,3,foreland basin,100,1,auto
+A13,A,medium,gemini-3-flash,1,Mississippi Valley-Type,100,1,auto
+A13,A,medium,gemini-3-flash,2,Mississippi Valley-type,100,1,auto
+A13,A,medium,gemini-3-flash,3,Mississippi Valley-type,100,1,auto
+A14,A,medium,gemini-3-flash,1,Walther's Law,100,1,auto
+A14,A,medium,gemini-3-flash,2,Walther's Law,100,1,auto
+A14,A,medium,gemini-3-flash,3,Walther's Law,100,1,auto
+A15,A,hard,gemini-3-flash,1,maximum flooding surface,100,1,auto
+A15,A,hard,gemini-3-flash,2,Maximum Flooding Surface,100,1,auto
+A15,A,hard,gemini-3-flash,3,Maximum Flooding Surface,100,1,auto
+A16,A,hard,gemini-3-flash,1,peritectic,100,1,auto
+A16,A,hard,gemini-3-flash,2,peritectic,100,1,auto
+A16,A,hard,gemini-3-flash,3,peritectic,100,1,auto
+A17,A,hard,gemini-3-flash,1,coesite,100,1,auto
+A17,A,hard,gemini-3-flash,2,Coesite,100,1,auto
+A17,A,hard,gemini-3-flash,3,coesite,100,1,auto
+A18,A,hard,gemini-3-flash,1,Grenville orogeny,100,1,auto
+A18,A,hard,gemini-3-flash,2,Grenville Orogeny,100,1,auto
+A18,A,hard,gemini-3-flash,3,Grenville orogeny,100,1,auto
+A19,A,hard,gemini-3-flash,1,Semail Ophiolite,100,1,auto
+A19,A,hard,gemini-3-flash,2,Semail Ophiolite,100,1,auto
+A19,A,hard,gemini-3-flash,3,Semail Ophiolite,100,1,auto
+A20,A,hard,gemini-3-flash,1,Omphacite,100,1,auto
+A20,A,hard,gemini-3-flash,2,omphacite,100,1,auto
+A20,A,hard,gemini-3-flash,3,omphacite,100,1,auto
+B01,B,easy,gemini-3-flash,1,Agbada Formation,100,1,auto
+B01,B,easy,gemini-3-flash,2,Agbada Formation,100,1,auto
+B01,B,easy,gemini-3-flash,3,Agbada Formation,100,1,auto
+B02,B,easy,gemini-3-flash,1,Pan-African Orogeny,100,1,auto
+B02,B,easy,gemini-3-flash,2,Pan-African orogeny,98,1,auto
+B02,B,easy,gemini-3-flash,3,Pan-African Orogeny,100,1,auto
+B03,B,easy,gemini-3-flash,1,Older Granites,100,1,auto
+B03,B,easy,gemini-3-flash,2,Older Granites,100,1,auto
+B03,B,easy,gemini-3-flash,3,Older Granites,95,1,auto
+B05,B,easy,gemini-3-flash,1,lead and zinc,100,1,auto
+B05,B,easy,gemini-3-flash,2,Lead and Zinc,98,1,auto
+B05,B,easy,gemini-3-flash,3,Lead and Zinc,100,1,auto
+B07,B,easy,gemini-3-flash,1,Iullemmeden Basin,100,1,auto
+B07,B,easy,gemini-3-flash,2,Iullemmeden Basin,100,1,auto
+B07,B,easy,gemini-3-flash,3,Iullemmeden Basin,95,1,auto
+B08,B,medium,gemini-3-flash,1,Akata Formation,100,1,auto
+B08,B,medium,gemini-3-flash,2,Akata Formation,100,1,auto
+B08,B,medium,gemini-3-flash,3,Akata Formation,100,1,auto
+B10,B,medium,gemini-3-flash,1,Santonian,98,1,auto
+B10,B,medium,gemini-3-flash,2,Santonian,95,1,auto
+B10,B,medium,gemini-3-flash,3,Santonian,98,1,auto
+B11,B,medium,gemini-3-flash,1,Abakaliki Anticlinorium,95,1,auto
+B11,B,medium,gemini-3-flash,2,Abakaliki Anticlinorium,95,1,auto
+B11,B,medium,gemini-3-flash,3,Abakaliki Anticlinorium,95,1,auto
+B12,B,medium,gemini-3-flash,1,Mamu Formation,100,1,auto
+B12,B,medium,gemini-3-flash,2,Mamu Formation,95,1,auto
+B12,B,medium,gemini-3-flash,3,Mamu Formation,98,1,auto
+B13,B,medium,gemini-3-flash,1,Ajali Sandstone,100,1,auto
+B13,B,medium,gemini-3-flash,2,Ajali Sandstone,100,1,auto
+B13,B,medium,gemini-3-flash,3,Ajali Sandstone,100,1,auto
+B14,B,medium,gemini-3-flash,1,Jurassic,98,1,auto
+B14,B,medium,gemini-3-flash,2,Jurassic,95,1,auto
+B14,B,medium,gemini-3-flash,3,Jurassic,100,1,auto
+B15,B,medium,gemini-3-flash,1,Columbite,100,1,auto
+B15,B,medium,gemini-3-flash,2,columbite,100,1,auto
+B15,B,medium,gemini-3-flash,3,columbite,100,1,auto
+B17,B,medium,gemini-3-flash,1,Kalambaina Formation,100,1,auto
+B17,B,medium,gemini-3-flash,2,Kalambaina Formation,98,1,auto
+B17,B,medium,gemini-3-flash,3,Kalambaina Formation,95,1,auto
+B18,B,hard,gemini-3-flash,1,Asu River Group,95,1,auto
+B18,B,hard,gemini-3-flash,2,Asu River Group,95,1,auto
+B18,B,hard,gemini-3-flash,3,Asu River Group,95,1,auto
+B19,B,hard,gemini-3-flash,1,Imo Shale,100,1,auto
+B19,B,hard,gemini-3-flash,2,Imo Shale,95,1,auto
+B19,B,hard,gemini-3-flash,3,Imo Shale,95,1,auto
+B20,B,hard,gemini-3-flash,1,Bima Sandstone,95,1,auto
+B20,B,hard,gemini-3-flash,2,Bima Sandstone,95,1,auto
+B20,B,hard,gemini-3-flash,3,Bima Sandstone,98,1,auto
+B21,B,hard,gemini-3-flash,1,Fika Shale,95,1,auto
+B21,B,hard,gemini-3-flash,2,Fika Shale,100,1,auto
+B21,B,hard,gemini-3-flash,3,Fika Shale,95,1,auto
+B22,B,hard,gemini-3-flash,1,Agbaja Formation,95,1,auto
+B22,B,hard,gemini-3-flash,2,Agbaja Formation,95,1,auto
+B22,B,hard,gemini-3-flash,3,Agbaja Formation,95,1,auto
+B23,B,hard,gemini-3-flash,1,Gwandu Formation,95,1,auto
+B23,B,hard,gemini-3-flash,2,Gwandu Formation,95,1,auto
+B23,B,hard,gemini-3-flash,3,Gwandu Formation,95,1,auto
+B25,B,hard,gemini-3-flash,1,Ogwashi-Asaba Formation,95,1,auto
+B25,B,hard,gemini-3-flash,2,Ogwashi-Asaba Formation,95,1,auto
+B25,B,hard,gemini-3-flash,3,Ogwashi-Asaba Formation,95,1,auto
+A01,A,medium,gpt-5.4-mini,1,Marcellus Shale,99,1,auto
+A01,A,medium,gpt-5.4-mini,2,Marcellus Shale,99,1,auto
+A01,A,medium,gpt-5.4-mini,3,Marcellus Shale,99,1,auto
+A02,A,medium,gpt-5.4-mini,1,Burgess Shale,99,1,auto
+A02,A,medium,gpt-5.4-mini,2,The Burgess Shale,99,1,auto
+A02,A,medium,gpt-5.4-mini,3,The Burgess Shale,99,1,auto
+A03,A,medium,gpt-5.4-mini,1,Morrison Formation,99,1,auto
+A03,A,medium,gpt-5.4-mini,2,Morrison Formation,99,1,auto
+A03,A,medium,gpt-5.4-mini,3,Morrison Formation,99,1,auto
+A04,A,medium,gpt-5.4-mini,1,Navajo Sandstone,99,1,auto
+A04,A,medium,gpt-5.4-mini,2,Navajo Sandstone,99,1,auto
+A04,A,medium,gpt-5.4-mini,3,Navajo Sandstone,99,1,auto
+A05,A,easy,gpt-5.4-mini,1,The Cretaceous–Paleogene (K–Pg) boundary,99,1,manual_claude
+A05,A,easy,gpt-5.4-mini,2,The Cretaceous–Paleogene (K–Pg) boundary,99,1,manual_claude
+A05,A,easy,gpt-5.4-mini,3,The Cretaceous–Paleogene (K–Pg) boundary,99,1,manual_claude
+A06,A,medium,gpt-5.4-mini,1,Bakken Formation,99,1,auto
+A06,A,medium,gpt-5.4-mini,2,Bakken Formation,99,1,auto
+A06,A,medium,gpt-5.4-mini,3,Bakken Formation,99,1,auto
+A07,A,medium,gpt-5.4-mini,1,Sillimanite,98,1,auto
+A07,A,medium,gpt-5.4-mini,2,sillimanite,98,1,auto
+A07,A,medium,gpt-5.4-mini,3,sillimanite,96,1,auto
+A08,A,medium,gpt-5.4-mini,1,Blueschist facies,99,1,auto
+A08,A,medium,gpt-5.4-mini,2,Blueschist facies,99,1,auto
+A08,A,medium,gpt-5.4-mini,3,Blueschist facies,98,1,auto
+A09,A,medium,gpt-5.4-mini,1,Komatiite,99,1,auto
+A09,A,medium,gpt-5.4-mini,2,Komatiite,99,1,auto
+A09,A,medium,gpt-5.4-mini,3,Komatiite,98,1,auto
+A10,A,medium,gpt-5.4-mini,1,Skarn deposit,97,1,auto
+A10,A,medium,gpt-5.4-mini,2,Skarn deposit,98,1,auto
+A10,A,medium,gpt-5.4-mini,3,Skarn deposit,98,1,auto
+A11,A,medium,gpt-5.4-mini,1,Bouma sequence,98,1,auto
+A11,A,medium,gpt-5.4-mini,2,Bouma sequence,99,1,auto
+A11,A,medium,gpt-5.4-mini,3,Bouma sequence,99,1,auto
+A12,A,medium,gpt-5.4-mini,1,A foreland basin,98,1,manual_claude
+A12,A,medium,gpt-5.4-mini,2,Foreland basin,98,1,auto
+A12,A,medium,gpt-5.4-mini,3,Foreland basin,98,1,auto
+A13,A,medium,gpt-5.4-mini,1,Mississippi Valley-type (MVT) deposits,95,1,manual_claude
+A13,A,medium,gpt-5.4-mini,2,Mississippi Valley-type (MVT) deposits,97,1,manual_claude
+A13,A,medium,gpt-5.4-mini,3,MVT (Mississippi Valley-Type) deposits,96,1,manual_claude
+A14,A,medium,gpt-5.4-mini,1,Walther’s Law of Facies Succession,99,1,manual_claude
+A14,A,medium,gpt-5.4-mini,2,Walther’s Law of Facies Succession,98,1,manual_claude
+A14,A,medium,gpt-5.4-mini,3,Walther’s Law of Facies Succession,98,1,manual_claude
+A15,A,hard,gpt-5.4-mini,1,The maximum flooding surface (MFS),98,1,manual_claude
+A15,A,hard,gpt-5.4-mini,2,The maximum flooding surface (MFS).,98,1,manual_claude
+A15,A,hard,gpt-5.4-mini,3,The maximum flooding surface (MFS).,98,1,manual_claude
+A16,A,hard,gpt-5.4-mini,1,A peritectic invariant point,98,1,manual_claude
+A16,A,hard,gpt-5.4-mini,2,Peritectic invariant point,96,1,manual_claude
+A16,A,hard,gpt-5.4-mini,3,A peritectic invariant point,97,1,manual_claude
+A17,A,hard,gpt-5.4-mini,1,Coesite,99,1,auto
+A17,A,hard,gpt-5.4-mini,2,Coesite,99,1,auto
+A17,A,hard,gpt-5.4-mini,3,Coesite,99,1,auto
+A18,A,hard,gpt-5.4-mini,1,The Grenville Orogeny,99,1,auto
+A18,A,hard,gpt-5.4-mini,2,Grenville orogeny,99,1,auto
+A18,A,hard,gpt-5.4-mini,3,Grenville orogeny,99,1,auto
+A19,A,hard,gpt-5.4-mini,1,Semail Ophiolite,97,1,auto
+A19,A,hard,gpt-5.4-mini,2,The Semail Ophiolite (also spelled Samail Ophiolite),98,1,manual_claude
+A19,A,hard,gpt-5.4-mini,3,The Semail Ophiolite,98,1,auto
+A20,A,hard,gpt-5.4-mini,1,omphacite,98,1,auto
+A20,A,hard,gpt-5.4-mini,2,omphacite,99,1,auto
+A20,A,hard,gpt-5.4-mini,3,omphacite,99,1,auto
+B01,B,easy,gpt-5.4-mini,1,The Agbada Formation,98,1,auto
+B01,B,easy,gpt-5.4-mini,2,The Agbada Formation,98,1,auto
+B01,B,easy,gpt-5.4-mini,3,The paralic sand-shale formation that hosts most Niger Delta hydrocarbon reservoirs is the Agbada Formation.,98,1,manual_claude
+B02,B,easy,gpt-5.4-mini,1,The Pan-African orogeny,98,1,auto
+B02,B,easy,gpt-5.4-mini,2,The Pan-African orogeny.,98,1,auto
+B02,B,easy,gpt-5.4-mini,3,Pan-African orogeny,98,1,auto
+B03,B,easy,gpt-5.4-mini,1,Younger Granites,92,0,manual_claude
+B03,B,easy,gpt-5.4-mini,2,Older Granite,95,1,auto
+B03,B,easy,gpt-5.4-mini,3,Older Granites,97,1,auto
+B05,B,easy,gpt-5.4-mini,1,Lead and zinc,98,1,auto
+B05,B,easy,gpt-5.4-mini,2,Lead and zinc,97,1,auto
+B05,B,easy,gpt-5.4-mini,3,Lead and zinc,96,1,auto
+B07,B,easy,gpt-5.4-mini,1,Iullemmeden (Iullemeden) Basin,97,1,manual_claude
+B07,B,easy,gpt-5.4-mini,2,the Iullemmeden (Iullemeden) Basin,96,1,manual_claude
+B07,B,easy,gpt-5.4-mini,3,Iullemmeden Basin,96,1,auto
+B08,B,medium,gpt-5.4-mini,1,Akata Formation,98,1,auto
+B08,B,medium,gpt-5.4-mini,2,Akata Formation,98,1,auto
+B08,B,medium,gpt-5.4-mini,3,Akata Formation,99,1,auto
+B10,B,medium,gpt-5.4-mini,1,Santonian,98,1,auto
+B10,B,medium,gpt-5.4-mini,2,Campanian,93,0,manual_claude
+B10,B,medium,gpt-5.4-mini,3,Santonian,98,1,auto
+B11,B,medium,gpt-5.4-mini,1,The Abakaliki Anticlinorium (Abakaliki Fold Belt),91,1,manual_claude
+B11,B,medium,gpt-5.4-mini,2,The Abakaliki Anticlinorium,97,1,auto
+B11,B,medium,gpt-5.4-mini,3,The Abakaliki anticlinorium (Abakaliki fold belt),92,1,manual_claude
+B12,B,medium,gpt-5.4-mini,1,The Mamu Formation (formerly the Lower Coal Measures),95,1,manual_claude
+B12,B,medium,gpt-5.4-mini,2,The Mamu Formation (also called the Lower Coal Measures).,98,1,manual_claude
+B12,B,medium,gpt-5.4-mini,3,The Mamu Formation (formerly the Lower Coal Measures).,98,1,manual_claude
+B13,B,medium,gpt-5.4-mini,1,Ajali Sandstone,98,1,auto
+B13,B,medium,gpt-5.4-mini,2,Ajali Sandstone,98,1,auto
+B13,B,medium,gpt-5.4-mini,3,Ajali Sandstone,98,1,auto
+B14,B,medium,gpt-5.4-mini,1,"Jurassic period, specifically the Late Jurassic.",97,1,manual_claude
+B14,B,medium,gpt-5.4-mini,2,Jurassic period (Late Jurassic),93,1,manual_claude
+B14,B,medium,gpt-5.4-mini,3,Jurassic,98,1,auto
+B15,B,medium,gpt-5.4-mini,1,columbite,97,1,auto
+B15,B,medium,gpt-5.4-mini,2,columbite,98,1,auto
+B15,B,medium,gpt-5.4-mini,3,Columbite,98,1,auto
+B17,B,medium,gpt-5.4-mini,1,Kalambaina Formation,96,1,auto
+B17,B,medium,gpt-5.4-mini,2,Dange Formation,97,0,manual_claude
+B17,B,medium,gpt-5.4-mini,3,Kalambaina Formation,97,1,auto
+B18,B,hard,gpt-5.4-mini,1,The Abakaliki Shale (often referred to as the Asu River Group),86,1,manual_claude
+B18,B,hard,gpt-5.4-mini,2,The Asu River Group,88,1,auto
+B18,B,hard,gpt-5.4-mini,3,"The Asu River Group (especially the Abakaliki Shale), which includes the oldest dated Albian sediments in the southern Benue Trough.",87,1,manual_claude
+B19,B,hard,gpt-5.4-mini,1,Imo Shale,98,1,auto
+B19,B,hard,gpt-5.4-mini,2,Imo Shale,98,1,auto
+B19,B,hard,gpt-5.4-mini,3,Imo Shale,98,1,auto
+B20,B,hard,gpt-5.4-mini,1,Bima Sandstone,98,1,auto
+B20,B,hard,gpt-5.4-mini,2,Bima Sandstone,98,1,auto
+B20,B,hard,gpt-5.4-mini,3,Bima Sandstone,98,1,auto
+B21,B,hard,gpt-5.4-mini,1,The Fika Shale Formation,95,1,manual_claude
+B21,B,hard,gpt-5.4-mini,2,The Fika Shale Formation,98,1,manual_claude
+B21,B,hard,gpt-5.4-mini,3,The Fika Shale Formation,96,1,manual_claude
+B22,B,hard,gpt-5.4-mini,1,Lokoja Formation,97,0,manual_claude
+B22,B,hard,gpt-5.4-mini,2,The Patti Formation,89,0,manual_claude
+B22,B,hard,gpt-5.4-mini,3,The Patti Formation,93,0,manual_claude
+B23,B,hard,gpt-5.4-mini,1,Gwandu Formation,97,1,auto
+B23,B,hard,gpt-5.4-mini,2,Gwandu Formation,96,1,auto
+B23,B,hard,gpt-5.4-mini,3,Gwandu Formation,93,1,auto
+B25,B,hard,gpt-5.4-mini,1,The Ogwashi-Asaba Formation.,96,1,auto
+B25,B,hard,gpt-5.4-mini,2,Mamu Formation,92,0,manual_claude
+B25,B,hard,gpt-5.4-mini,3,Ogwashi-Asaba Formation,97,1,auto
