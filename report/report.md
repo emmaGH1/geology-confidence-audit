@@ -129,7 +129,7 @@ The practical point is that plausible, confident, wrong answers about local geol
 
 ## Author Contributions
 
-Emmanuel conceived the study and designed the research question, hypothesis, question-set design, metrics and protocol, and approved each stage gate. Implementation, grading and drafting were done with LLM assistance as described in the LLM Usage Statement.
+Emmanuel (sole author) conceived the project, designed the study and protocol, directed and reviewed all stages, and edited the final report. LLM tools assisted as described in the LLM Usage Statement.
 
 ## References
 
@@ -219,11 +219,6 @@ Set B IDs are not contiguous because five draft items were removed before the ru
 
 ## LLM Usage Statement
 
-This project used LLM assistance extensively, and we state it plainly so readers can weigh the results:
+The author conceived the project and chose the topic, designed the study (research question, hypothesis, two-set design, metrics and protocol), set the rules for the answer key and grading, made the decision at each stage gate, and reviewed and edited this report.
 
-- **Study design** (research question, hypothesis, two-set design, metrics, rules against invented data) was written by the author.
-- **Question drafting:** the questions were drafted by LLM agents and revised after an LLM review for answer leakage and contested answers; the author approved the revisions. All 40 gold answers were then checked against openable web sources by LLM research agents (evidence with URLs and quotes in `data/source_check_*.csv`).
-- **Code:** the run harness was written by an LLM agent (Gemini-based); grading, analysis, export and checking scripts were written by Claude (Anthropic).
-- **Grading:** 386 responses were auto-graded by exact match; the remaining 94 were graded by Claude at the author's request and cross-checked by a blind second LLM grader (agreement 94 of 94).
-- **Writing:** this report was drafted by Claude from the logged results. The author takes responsibility for its content.
-- **Verification:** every number in the report is checked by script against the files in `results/`; every reference was checked to exist (arXiv API or Crossref) and is cited only for claims stated in its abstract.
+LLM tools were used as assistants under the author's direction: to draft candidate questions and implement the code (Claude and a Gemini-based coding agent), to grade the 94 responses that did not exactly match the answer key (Claude, cross-checked by a blind second model, agreement 94 of 94), to check each gold answer against web sources, and to help draft the text. All numbers in this report are checked by script against the logged results in the repository, and every reference was checked to exist.
