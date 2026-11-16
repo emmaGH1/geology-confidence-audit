@@ -1,15 +1,10 @@
-<!--
-TODO (author): port this Markdown into the official Apart Research template before export.
-TODO (author): every number below is copied from results/summary.csv, results/bootstrap.csv,
-results/per_question.csv, results/grading_counts.csv or results/needs_review.csv. Re-run
-`python3 src/check_report_numbers.py` after any edit.
--->
+<!-- Numbers trace to results/*.csv; re-run `python3 src/check_report_numbers.py` after any edit. -->
 
 # Confidently Wrong Underground? A Pilot Study of LLM Calibration on Nigerian Regional Geology vs. Global Textbook Geology
 
-**Author:** Emmanuel (B.Tech Geology)
-**Track:** 1, Model Epistemics and Decision-Making Evals
-**Status:** pilot study
+<p class="authors"><b>Emmanuel</b><br>Independent researcher (B.Tech Geology)<br><br><i>With Apart Research</i></p>
+
+<p class="note">Research conducted at the AI x Epistemics Research Sprint, November 2026 (Track 1: Model Epistemics &amp; Decision-Making Evals). Pilot study.</p>
 
 ## Abstract
 
@@ -34,13 +29,15 @@ When a model gives a wrong answer with high confidence, a user has no signal to 
 
 **Do language models know what they know?** Kadavath et al. (2022) studied whether language models can evaluate the correctness of their own answers and found that larger models are reasonably well calibrated on many multiple-choice and true/false formats.
 
+**Rewarding confident guessing.** Kalai et al. (2025) argue that language models hallucinate because training and evaluation reward guessing over acknowledging uncertainty. Measuring stated confidence alongside accuracy, as we do, is one way to see whether such guessing is flagged by the model itself.
+
 **Verbalized confidence.** Tian et al. (2023) found that for models fine-tuned with human feedback, confidence stated in words can be better calibrated than the model's conditional probabilities. Xiong et al. (2023) systematically evaluated confidence-elicitation strategies and reported that verbalized confidences tend to be overconfident, and that all investigated methods struggle on tasks requiring professional knowledge. Our design uses a simple verbalized confidence (0–100 integer in JSON), and we treat it as self-report, not as a true probability.
 
 **Long-tail and geographic knowledge.** Kandpal et al. (2022) found that a model's ability to answer a factual question relates to how many associated documents it saw in pre-training. Manvi et al. (2024) studied what LLMs know about the world through a geographic lens and reported systematic geographic biases.
 
 **Geoscience LLMs.** Deng et al. (2023) introduced K2, a geoscience language model, together with geoscience instruction data and a benchmark. We did not find a prior study of verbalized calibration on African regional geology. The Nigerian answer key draws on the standard regional reference (Obaje, 2009) and on works cited per item in Appendix B.
 
-## 3. Methodology
+## 3. Methods
 
 **Question sets.** Set A has 20 global geology questions (petrology, metamorphism, ore deposits, sedimentology, tectonics), including five formation-name questions about well-documented non-African units (Marcellus Shale, Burgess Shale, Morrison Formation, Navajo Sandstone, Bakken Formation). These were added so that both sets contain formation-name items, reducing a question-type confound. Set B has 20 Nigerian questions spanning the Basement Complex, Benue Trough, Niger Delta, Anambra Basin, Jos Younger Granites, Chad (Bornu), Sokoto and Bida basins, and mineral occurrences. Each item has a gold answer of one to five words, a list of accepted variants, and a source. Before submission, every gold answer was checked against openable web sources by an LLM research assistant; all 40 were confirmed (`data/source_check_A.csv`, `data/source_check_B.csv`), although most of that evidence comes from papers, survey pages and a stratigraphic lexicon rather than from the textbooks cited per item. Questions were drafted with LLM assistance and reviewed for answer leakage and contested answers before the run; 5 of an initial 25 Set B items were removed for being generic, ambiguous or guessable. The full list is in Appendix B.
 
@@ -88,9 +85,13 @@ Each model answered each question 3 times at temperature 0.7 (4 × 40 × 3 = 480
 | gpt-5.4-mini | 0.0933 | [0.0071, 0.2058] |
 | ALL | 0.0508 | [−0.0120, 0.1251] |
 
-![Figure 1: Reliability diagrams per model, Set A vs Set B. Point labels are bin counts.](../figures/reliability.png)
+![Figure 1](../figures/reliability.png)
 
-![Figure 2: Overconfidence gap by model and set, with 95% question-level bootstrap intervals.](../figures/gap.png)
+*Figure 1. Reliability diagrams, one panel per model. Each point is a confidence bin (10 equal-width bins); x = mean stated confidence in the bin, y = accuracy in the bin, labels = number of responses. Blue = Set A (global), orange = Set B (Nigerian). The dashed diagonal is perfect calibration; points below it are overconfident.*
+
+![Figure 2](../figures/gap.png)
+
+*Figure 2. Overconfidence gap (mean stated confidence minus accuracy) per model and pooled (ALL), for Set A (blue) and Set B (orange). Error bars are 95% question-level bootstrap intervals (2000 resamples). Positive values mean overconfidence.*
 
 **Accuracy.** Every model answered every Set A question correctly in all three repeats. On Set B, accuracy was lower for three of four models (claude-haiku-4.5 0.6000; deepseek-v3.2 and gpt-5.4-mini 0.8833); gemini-3-flash answered every Set B question correctly.
 
@@ -100,19 +101,42 @@ Each model answered each question 3 times at temperature 0.7 (4 × 40 × 3 = 480
 
 **Where models failed.** Pooled over models, the hardest Set B items were B22 (ironstone-hosting formation near Lokoja; accuracy 0.3333) and B17 (Paleocene limestone quarried near Sokoto; 0.5000), with mean confidences of 0.7992 and 0.8025 (`results/per_question.csv`). Several incorrect answers named a real formation from the same basin but the wrong unit, for example "Patti Formation" or "Lokoja Formation" for B22 and "Dange Formation" for B17 (`results/needs_review.csv`).
 
-## 5. Discussion
+## 5. Discussion and Limitations
 
 The hypothesis is only partly supported. Accuracy dropped on Nigerian regional geology for three of four models, consistent with weaker coverage of regional material. But whether confidence failed to drop with it depended on the model: one model (gpt-5.4-mini) kept confidence high and showed a gap difference whose interval excludes zero; another (claude-haiku-4.5) showed the largest accuracy drop yet lowered its confidence by a similar amount; and one (gemini-3-flash) made no errors at all. With 20 questions per set, the pooled interval includes zero, so this pilot does not establish a general effect.
 
 The failure pattern is still relevant to practice. Errors that name a real formation from the right basin look plausible to a non-specialist. If a model attaches high stated confidence to such answers, a user relying on that confidence for, for example, siting a borehole or screening a mineral prospect has little reason to check. Even in this small sample, mean Set B confidence for two models was 0.9050 and 0.9600 while accuracy was 0.8833.
 
-Practical next steps are: a larger Set B with author-verified sources; harder Set A items to remove the ceiling; full expert grading; and more models, including larger ones.
+### Limitations
+
+The main limitations are summarised here and detailed in Appendix A. The sample is small (20 questions per set, 480 responses). Set A hit a ceiling (all models 1.0000 accuracy), so its gap cannot be positive, which biases the between-set difference upward. 94 responses were graded by an LLM rather than by the domain expert. The answer key was web-checked by an LLM assistant, not checked page-by-page against the cited textbooks. Verbalized confidence is a self-report. Results are specific to four gateway-served model versions on one date. If the regional items are simply harder for reasons unrelated to training-data coverage (e.g. more similar-sounding formation names), the accuracy drop would not by itself show under-representation.
+
+### Future Work
+
+A larger Set B with expert-verified sources; harder Set A items to remove the ceiling; full expert grading; more and larger models; and the pushback (answer-flipping) condition that was planned but not run in the sprint time.
+
+## 6. Conclusion
+
+In this pilot, three of four models were less accurate on Nigerian regional geology than on global textbook geology. Whether their stated confidence fell accordingly depended on the model: gpt-5.4-mini stayed highly confident and was the only model whose increase in overconfidence had an interval excluding zero, while claude-haiku-4.5 lowered its confidence roughly in step with its accuracy. Pooled over models the effect is not distinguishable from zero at this sample size.
+
+The practical point is that plausible, confident, wrong answers about local geology do occur. A larger, expert-graded version of this set would show whether that pattern is general, and the released question set and harness make that straightforward to run.
+
+## Code and Data
+
+- Code repository: https://github.com/emmaGH1/geology-confidence-audit (all code written during the sprint; no preexisting code)
+- Data: `data/questions.csv` (answer key), `results/raw.jsonl` (every API call and response), `results/graded.csv`, `results/summary.csv`, `results/bootstrap.csv`
+- Decision log: `DECISIONS.md` (every design and analysis choice, with time stamps)
+
+## Author Contributions
+
+Emmanuel conceived the study and designed the research question, hypothesis, question-set design, metrics and protocol, and approved each stage gate. Implementation, grading and drafting were done with LLM assistance as described in the LLM Usage Statement.
 
 ## References
 
 - Deng, C., Zhang, T., He, Z., Xu, Y., et al. (2023). K2: A Foundation Language Model for Geoscience Knowledge Understanding and Utilization. https://arxiv.org/abs/2306.05064
 - Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). On Calibration of Modern Neural Networks. *ICML 2017*. https://arxiv.org/abs/1706.04599
 - Kadavath, S., Conerly, T., Askell, A., et al. (2022). Language Models (Mostly) Know What They Know. https://arxiv.org/abs/2207.05221
+- Kalai, A. T., Nachum, O., Vempala, S. S., & Zhang, E. (2025). Why Language Models Hallucinate. https://arxiv.org/abs/2509.04664
 - Kandpal, N., Deng, H., Roberts, A., Wallace, E., et al. (2022). Large Language Models Struggle to Learn Long-Tail Knowledge. https://arxiv.org/abs/2211.08411
 - Manvi, R., Khanna, S., Burke, M., Lobell, D., et al. (2024). Large Language Models are Geographically Biased. https://arxiv.org/abs/2402.02680
 - Obaje, N. G. (2009). *Geology and Mineral Resources of Nigeria*. Lecture Notes in Earth Sciences 120. Springer. https://doi.org/10.1007/978-3-540-92685-6
@@ -192,3 +216,14 @@ Set B IDs are not contiguous because five draft items were removed before the ru
 | B22 | B | In the southern Bida (Mid-Niger) Basin near Lokoja, which Maastrichtian formation hosts the oolitic and pisolitic ironstone deposits? | Agbaja Ironstone | Agbaja Formation\|Agbaja Ironstone Formation\|Agbaja | Obaje N.G. (2009) Geology and Mineral Resources of Nigeria, Lecture Notes in Earth Sciences 120, Springer; Ladipo K.O., Akande S.O. & Mucke A. (1994) Genesis of ironstones from the Middle Niger sedimentary basin, Journal of Mining and Geology 30 | hard | confirmed |
 | B23 | B | Which continental formation is the youngest major pre-Quaternary lithostratigraphic unit of the Sokoto Basin? | Gwandu Formation | Gwandu\|Continental Terminal | Obaje N.G. (2009) Geology and Mineral Resources of Nigeria, Lecture Notes in Earth Sciences 120, Springer; Kogbe C.A. (ed.) (1989) Geology of Nigeria, 2nd ed., Rock View, Jos | hard | confirmed |
 | B25 | B | Which Oligocene-Miocene formation of southern Nigeria is known for its lignite seams? | Ogwashi-Asaba Formation | Ogwashi-Asaba\|Ogwashi Asaba Formation\|Ogwashi-Asaba lignite | Reyment R.A. (1965) Aspects of the Geology of Nigeria, Ibadan University Press; Obaje N.G. (2009) Geology and Mineral Resources of Nigeria, Lecture Notes in Earth Sciences 120, Springer | hard | confirmed |
+
+## LLM Usage Statement
+
+This project used LLM assistance extensively, and we state it plainly so readers can weigh the results:
+
+- **Study design** (research question, hypothesis, two-set design, metrics, rules against invented data) was written by the author.
+- **Question drafting:** the questions were drafted by LLM agents and revised after an LLM review for answer leakage and contested answers; the author approved the revisions. All 40 gold answers were then checked against openable web sources by LLM research agents (evidence with URLs and quotes in `data/source_check_*.csv`).
+- **Code:** the run harness was written by an LLM agent (Gemini-based); grading, analysis, export and checking scripts were written by Claude (Anthropic).
+- **Grading:** 386 responses were auto-graded by exact match; the remaining 94 were graded by Claude at the author's request and cross-checked by a blind second LLM grader (agreement 94 of 94).
+- **Writing:** this report was drafted by Claude from the logged results. The author takes responsibility for its content.
+- **Verification:** every number in the report is checked by script against the files in `results/`; every reference was checked to exist (arXiv API or Crossref) and is cited only for claims stated in its abstract.

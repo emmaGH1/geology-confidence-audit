@@ -85,3 +85,7 @@ All autonomous orchestrator decisions made between human gates are logged here.
 27. Re-fetched all 7 arXiv abstracts. Each related-work claim now matches its abstract.
 28. Set A/B web checks: 40/40 confirmed. Filled the 5 TODO Set A sources with the opened pages proposed by the checker. `source_verified` = `web_checked` for all 40 (LLM web check, not an author textbook check). A03 "most prolific" and A15 "downlap surface" caveats are disclosed in the limitations; question wording was not changed post-run.
 29. Checked that the API key string appears in no file outside .env.
+
+## 2026-11-16 — Template conformance (12:10 WAT)
+
+30. Restructured the report to the official template's sections: title/author block with "With Apart Research" and the sprint footnote; 1 Introduction, 2 Related Work, 3 Methods, 4 Results (numbered figure captions), 5 Discussion and Limitations (with Limitations and Future Work subsections), 6 Conclusion, Code and Data, Author Contributions, References, appendices, and LLM Usage Statement. Kept the sprint-mandated "Limitations and Dual-Use / Ethical Considerations" appendix. Added Kalai et al. 2025 (arXiv 2509.04664, verified), which is on the Track 1 reading list. The author affiliation was not supplied, so "Independent researcher (B.Tech Geology)" was used.
